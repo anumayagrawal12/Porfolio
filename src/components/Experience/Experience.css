@@ -1,0 +1,23 @@
+.exp {
+  background-color: transparent;
+  color: white;
+}
+.exphead {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.expclass {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+}
+/* .vertical-timeline-element-icon bounce-in {
+  width: 5px;
+  height: 5px;
+} */

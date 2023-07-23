@@ -1,0 +1,221 @@
+.project {
+  background-color: transparent;
+}
+.projectpage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  color: white;
+}
+.prhead {
+}
+.projectca {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 7rem;
+  color: white;
+  gap: 1rem;
+}
+.projectcard {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  /* justify-content: center; */
+  align-items: center;
+  height: 700px;
+  width: 400px;
+  border: 3px solid gold;
+}
+.cardhead {
+  width: 90%;
+}
+.cardhead img {
+  width: 100%;
+}
+.cardcontenthead {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.cardcontent {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cardbutton {
+  margin-top: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  gap: 1rem;
+}
+/* .cardbutton button {
+  width: 25%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+} */
+.projectcard:hover {
+  transform: scale(1.05);
+  transition-duration: 1s;
+  transition-property: transform;
+}
+.rotate {
+  width: 30%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+.buttonx {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.buttonx button {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: white;
+}
+.icon {
+  font-size: 1.2rem;
+}
+.buttonc {
+  font-size: 1rem;
+}
+.rotate a {
+  position: relative;
+  /* padding: 10px 20px; */
+  /* box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4); */
+  color: #999;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* letter-spacing: 4px;
+	font: 700 30px consolas; */
+  overflow: hidden;
+}
+
+.rotate a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #171618, #04b0ee);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.rotate a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to bottom, #171618, #04b0ee);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.rotate a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, #171618, #04b0ee);
+  animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.rotate a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to top, #171618, #04b0ee);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@media screen and (max-width: 800px) {
+  .projectcard {
+    width: 200px;
+    height: 800px;
+  }
+  .cardbutton {
+    width: 100%;
+  }
+  .rotate {
+    width: 40%;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .projectcard {
+    width: 80%;
+    height: max-content;
+  }
+  /* .project {
+    margin-bottom: 20px;
+  } */
+}

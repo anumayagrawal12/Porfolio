@@ -1,0 +1,143 @@
+.aboutcolumn {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  color: white;
+}
+.aboutrow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  /* padding: 30px; */
+  /* margin: 10px; */
+  margin-top: 40px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e89105;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #573a02;
+}
+.aboutrow1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  padding-left: 10%;
+  padding-top: 30px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+.aboutinner1 {
+  display: flex;
+}
+
+.innerinner {
+  padding: 4px;
+}
+.aboutimg {
+  width: 35%;
+  padding: 20px;
+  margin-top: 50px;
+}
+.aboutimg img {
+  margin-top: 40px;
+  width: 90%;
+  height: 90%;
+}
+.aboutcolumnicon {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.aboutcolumnicon h2 {
+  font-size: 2rem;
+}
+.aboutimg img {
+  border-radius: 20px;
+}
+.abouticon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.techicon {
+  height: 130px;
+  width: 200px;
+  border: 2px solid gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.techicon:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+  transition-property: transform;
+}
+/* .aboutinner2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+} */
+.skillicon {
+  height: 75px;
+  width: 75px;
+  color: white;
+}
+@media screen and (max-width: 550px) {
+  .aboutrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .aboutimg {
+    width: 95%;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .aboutimg img {
+    width: 85%;
+  }
+  .aboutinner1 h1 {
+    font-size: 1.5rem;
+  }
+  .aboutrow1 {
+    width: 80%;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.homepage {
+  /* z-index: 100; */
+  background: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.linke:hover {
+  color: #0077b5;
+}
+.insta:hover {
+  /* color: #fd5949; */
+  color: #962fbf;
+}
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.home-p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+
+  margin-bottom: 0;
+  padding-top: 4rem;
+}
+.home-content {
+  height: 100%;
+  padding: 20px;
+  font-size: 2rem;
+  color: white;
+}
+.chome1 {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.homef {
+  margin-top: 10px;
+  padding-top: 10px;
+  height: 100px;
+}
+.chome2 {
+  margin-top: 10px;
+}
+.chome3 {
+}
+.home-img {
+  aspect-ratio: 3/4;
+  height: 200px;
+  margin-top: 30px;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.home-img img {
+  /* height: 300px;
+  width: 400px; */
+  aspect-ratio: 3/4;
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.homebottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  font-size: 1.2rem;
+  padding-bottom: 30px;
+}
+.homeicon {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.g {
+  color: #e89105;
+}
+.homeicon {
+  /* background-color: white; */
+  /* border-radius: 50%; */
+  padding: 10px;
+  padding-top: 40px;
+  margin-top: 10px;
+  /* display: inline-block; */
+}
+/* .homeic:hover {
+  box-shadow: 1px 1px 1px 1px blue;
+} */
+.homeicon li a {
+  color: black;
+}
+.homeb3 ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin: 0px 20px;
+}
+.homeb3 ul li:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+  width: 100%;
+  height: 10px;
+  background: transparent;
+  transform-origin: top;
+  transform: skewX(-41deg);
+}
+.homeb3 ul li:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -9px;
+  width: 9px;
+  height: 100%;
+  background: transparent;
+  transform-origin: right;
+  transform: skewY(-49deg);
+}
+.homeb3 ul li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px !important;
+  transition: 1.5s ease-out;
+}
+.homeb3 ul li:hover span {
+  z-index: 1000;
+  transition: 0.3s;
+  color: #fff;
+  /* box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5); */
+}
+.homeb3 ul li:hover span:nth-child(5) {
+  transform: translate(40px, -40px);
+  opacity: 1;
+}
+.homeb3 ul li:hover span:nth-child(4) {
+  transform: translate(30px, -30px);
+  opacity: 0.8;
+}
+.homeb3 ul li:hover span:nth-child(3) {
+  transform: translate(20px, -20px);
+  opacity: 0.6;
+}
+.homeb3 ul li:hover span:nth-child(2) {
+  transform: translate(10px, -10px);
+  opacity: 0.4;
+}
+.homeb3 ul li:hover span:nth-child(1) {
+  transform: translate(0px, 0px);
+  opacity: 0.2;
+}
+.homeb3 ul li:nth-child(1):hover span {
+  background: #52e19f !important;
+}
+.homeb3 ul li:nth-child(2):hover span {
+  background: #0077b5 !important;
+}
+.homeb3 ul li:nth-child(3):hover span {
+  background: #ea6e96 !important;
+}
+@media screen and (max-width: 800px) {
+  .home-p {
+    flex-direction: column;
+  }
+  .home-img {
+    /* width: 95%; */
+  }
+  .home-img img {
+    /* height: 200px;
+    width: 80%;
+    border-radius: 50%; */
+  }
+  .homeb3 ul li {
+    position: relative;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    margin: 0px 15px;
+  }
+}
